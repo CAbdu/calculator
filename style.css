@@ -1,0 +1,84 @@
+html {
+  text-align: center;
+}
+
+#cal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-height: 90vh;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#container {
+  border: 10px solid rgb(168, 7, 7);
+  background-color: rgb(187, 9, 9);
+  border-radius: 3px;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+  gap: 2px;
+}
+
+#screen {
+  grid-column: 1/-1;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 5px;
+  font-size: 5.5em;
+  font-weight: initial;
+  text-shadow: 1.3px 1.3px black;
+  margin: 5px;
+}
+
+button {
+  margin: 1px;
+  border-radius: 5%;
+  border: none;
+  font-weight: initial;
+  font-size: 2em;
+  font-family: monospace;
+  background-color: #1ab380;
+  color: black;
+}
+
+button:active {
+  background-color: #50f1bc;
+}
+
+.operand {
+  background-color: rgb(87, 87, 221);
+}
+
+.operand:active {
+  background-color: rgb(128, 128, 238);
+}
+
+.operator {
+  background-color: gold;
+}
+
+.operator:focus {
+  background-color: rgb(218, 199, 92);
+}
+.equals {
+  grid-column: span 2;
+  background-color: gold;
+}
+
+.decimal {
+  background-color: rgb(87, 87, 221);
+}
+
+.decimal:active {
+  background-color: rgb(128, 128, 238);
+}
+.equals:active {
+  background-color: rgb(218, 199, 92);
+}

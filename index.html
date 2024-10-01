@@ -7,38 +7,31 @@
   <title>Calculator</title>
 </head>
 <body>
-  <container class="cal">
-    <div class="screen">
-      <div class="buttons">
-        <div class="blueButtons">
-          <button id="clear">AC</button>
-          <button id="erase">Er</button>
-        </div>
-
-        <div class="numbers">
-          <button class="operand">1</button>
-          <button class="operand">2</button>
-          <button class="operand">3</button>
-          <button class="operand">4</button>
-          <button class="operand">5</button>
-          <button class="operand">6</button>
-          <button class="operand">7</button>
-          <button class="operand">8</button>
-          <button class="operand">9</button>
-          <button id="zero">0</button>
-          <button class="decimal">.</button>
-        </div>
-
-        <div class="operators">
-          <button class="operator">/</button>
-          <button class="operator">*</button>
-          <button class="operator">-</button>
-          <button class="operator">+</button>
-          <button class="equal">*</button>
-        </div>
-      </div>
+  <main id="cal">
+    <div id="container">
+    <div id="screen">0</div>
+      <button type="button" class="clear" value="clear" data-key="8">AC</button>
+      <button type="button" class="sign" value="sign" data-key="192">+/-</button>
+      <button type="button" class="percent" value="percent" data-key="80">%</button>
+      <button type="button" class="operator" value="/" data-key="68">/</button>
+      <button type="button" class="operand" value="7" data-key="55">7</button>
+      <button type="button" class="operand" value="8" data-key="56">8</button>
+      <button type="button" class="operand" value="9" data-key="57">9</button>
+      <button type="button" class="operator" value="*" data-key="88">*</button>
+      <button type="button" class="operand" value="4" data-key="52">4</button>
+      <button type="button" class="operand" value="5" data-key="53">5</button>
+      <button type="button" class="operand" value="6" data-key="54">6</button>
+      <button type="button" class="operator" value="-" data-key="173">-</button>
+      <button type="button" class="operand" value="1" data-key="49">1</button>
+      <button type="button" class="operand" value="2" data-key="50">2</button>
+      <button type="button" class="operand" value="3" data-key="51">3</button>
+      <button type="button" class="operator" value="+" data-key="61">+</button>
+      <button type="button" id ="zero" class="operand" value="0" data-key="48">0</button>
+      <button type="button" class="decimal" value="." data-key="190">.</button>
+      <button type="button" class="equals" value="=" data-key="69">=</button>
     </div>
-  </container>
+  
+  </main>
   <script src="calculator.js"></script>
 </body>
 </html>
