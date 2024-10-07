@@ -23,7 +23,7 @@ html {
   gap: 2px;
 }
 
-#screen {
+#display {
   grid-column: 1/-1;
   background-color: grey;
   display: flex;
